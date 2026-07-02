@@ -8,7 +8,7 @@ public class FranchiseSaviorApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(FranchiseSaviorApplication.class, args);
-		System.out.println("Hello World");
+
 	}
 
 }
