@@ -1,0 +1,195 @@
+/* Basic Rule Sets */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.bold-heading {
+    font-weight: bold;
+    font-size: 70px;
+}
+
+.lesser-heading {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.normal-text {
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    line-height: 30px;
+    font-weight: 15;
+}
+
+.normal-headings {
+    text-decoration: underline;
+    text-underline-position: below;
+    font-size: 20px;
+    color: black;
+}
+
+.list {
+    border-style: double;
+    padding: 30px;
+    border-color: black;
+    border-width: medium;
+}
+
+.middle-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+.middle-heading-no-underline {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.list-starter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.list-starter-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 400px;
+
+}
+
+.different-background {
+    background-color: #ddf3f3;
+}
+
+
+/* Heading Menu */
+
+#links {
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    z-index: 3;
+}
+
+.menu-button {
+    color: #6a6969;
+    background: white;
+    height: 40px;
+    width: 80px;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.menu-button:hover {
+    color: black;
+    background-color: #f8f8f8;
+}
+
+/* Home Page First Screen Content */
+
+#Section1 {
+    background: linear-gradient(to right, black 0%, black 40%, transparent 100%);
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding-left: 100px;
+    color: white;
+    gap: 15px;
+    z-index: 2;
+}
+
+h1, .bold-heading {
+    color: #5e53f1;
+    font-family: Verdana, sans-serif;
+    margin-bottom: 20px;
+}
+
+
+h3 .lesser_heading {
+    color: white;
+}
+
+.center-menu-buttons {
+    margin-top: 40px;
+    height: 60px;
+    width: 240px;
+    background-color: #0b0bcf;
+    border-radius: 100px;
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-right: 40px;
+}
+
+.center-menu-buttons:hover {
+    background-color: #2424cf;
+}
+
+#center-buttons {
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    z-index: 2;
+    gap: 16px;
+    margin-bottom: 50px;
+}
+
+/* 2nd Screen Content */
+#Section2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-headings {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#list-seperator {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: normal;
+    padding-left: 255px;
+}
+
+/* Third Page Content */
+#third-page {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    background-color: #ddf3f3;
+}
+
+#fourth-page {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+
+
+
