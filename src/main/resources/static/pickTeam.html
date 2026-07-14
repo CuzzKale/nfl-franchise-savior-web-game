@@ -5,6 +5,106 @@
     <title>Franchise Savior</title>
 </head>
 <body>
-<h1>Pick A Team</h1>
+<form action="/pickTeam.html" method="post">
+
+    <h1>Coach Info</h1>
+    <p>You Are Required To Fill Out This Information</p>
+    <label for="coach-name">Coach Name:</label>
+    <input type="text" id="coach-name" name="coach-name-text" value="coach"
+    minlength="3" maxlength="25" required>
+
+    <label for="coach-age">Coach Age:</label>
+    <input type="number" id="coach-age" name="coach-age-number"
+    min="18" max="80" required>
+
+    <h1>Pick A Team</h1>
+    <h3>AFC</h3>
+
+    <p>AFC East</p>
+    <input type="radio" id="Buffalo" name="pick" value="Buffalo">
+    <label for="Buffalo">Buffalo</label>
+    <input type="radio" id="Miami" name="pick" value="Miami">
+    <label for="Miami">Miami</label>
+    <input type="radio" id="New England" name="pick" value="New England">
+    <label for="New England">New England</label>
+    <input type="radio" id="New York J" name="pick" value="New York J">
+    <label for="New York J">New York J</label>
+
+    <p>AFC North</p>
+    <input type="radio" id="Baltimore" name="pick" value="Baltimore">
+    <label for="Baltimore">Baltimore</label>
+    <input type="radio" id="Cincinnati" name="pick" value="Cincinnati">
+    <label for="Cincinnati">Cincinnati</label>
+    <input type="radio" id="Cleveland" name="pick" value="Cleveland">
+    <label for="Cleveland">Cleveland</label>
+    <input type="radio" id="Pittsburgh" name="pick" value="Pittsburgh">
+    <label for="Pittsburgh">Pittsburgh</label>
+
+    <p>AFC South</p>
+    <input type="radio" id="Houston" name="pick" value="Houston">
+    <label for="Houston">Houston</label>
+    <input type="radio" id="Jacksonville" name="pick" value="Jacksonville">
+    <label for="Jacksonville">Jacksonville</label>
+    <input type="radio" id="Indianapolis" name="pick" value="Indianapolis">
+    <label for="Indianapolis">Indianapolis</label>
+    <input type="radio" id="Tennessee" name="pick" value="Tennessee">
+    <label for="Tennessee">Tennessee</label>
+
+    <p>AFC West</p>
+    <input type="radio" id="Denver" name="pick" value="Denver">
+    <label for="Denver">Denver</label>
+    <input type="radio" id="Kansas City" name="pick" value="Kansas City">
+    <label for="Kansas City">Kansas City</label>
+    <input type="radio" id="Las Vegas" name="pick" value="Las Vegas">
+    <label for="Las Vegas">Las Vegas</label>
+    <input type="radio" id="Los Angeles" name="pick" value="Los Angeles">
+    <label for="Los Angeles">Los Angeles</label>
+
+    <h3>NFC</h3>
+
+    <p>NFC East</p>
+    <input type="radio" id="Dallas" name="pick" value="Dallas">
+    <label for="Dallas">Dallas</label>
+    <input type="radio" id="New York G" name="pick" value="New York G">
+    <label for="New York G">New York G</label>
+    <input type="radio" id="Philadelphia" name="pick" value="Philadelphia">
+    <label for="Philadelphia">Philadelphia</label>
+    <input type="radio" id="Washington" name="pick" value="Washington">
+    <label for="Washington">Washington</label>
+
+    <p>NFC North</p>
+    <input type="radio" id="Chicago" name="pick" value="Chicago">
+    <label for="Chicago">Chicago</label>
+    <input type="radio" id="Detroit" name="pick" value="Detroit">
+    <label for="Detroit">Detroit</label>
+    <input type="radio" id="Green Bay" name="pick" value="Green Bay">
+    <label for="Green Bay">Green Bay</label>
+    <input type="radio" id="Minnesota" name="pick" value="Minnesota">
+    <label for="Minnesota">Minnesota</label>
+
+    <p>NFC South</p>
+    <input type="radio" id="Atlanta" name="pick" value="Atlanta">
+    <label for="Atlanta">Atlanta</label>
+    <input type="radio" id="Carolina" name="pick" value="Carolina">
+    <label for="Carolina">Carolina</label>
+    <input type="radio" id="New Orleans" name="pick" value="New Orleans">
+    <label for="New Orleans">New Orleans</label>
+    <input type="radio" id="Tampa Bay" name="pick" value="Tampa Bay">
+    <label for="Tampa Bay">Tampa Bay</label>
+
+    <p>NFC West</p>
+    <input type="radio" id="Arizona" name="pick" value="Arizona">
+    <label for="Arizona">Arizona</label>
+    <input type="radio" id="Los Angeles R" name="pick" value="Los Angeles R">
+    <label for="Los Angeles R">Los Angeles R</label>
+    <input type="radio" id="San Francisco" name="pick" value="San Francisco">
+    <label for="San Francisco">San Francisco</label>
+    <input type="radio" id="Seattle" name="pick" value="Seattle">
+    <label for="Seattle">Seattle</label>
+
+    <input type="submit" value="Continue">
+
+
+</form>
 </body>
 </html>
