@@ -1,9 +1,9 @@
 package com.cuzzkale.Franchise_Savior.entities.team;
 
-import com.cuzzkale.Franchise_Savior.entities.league.division_entity;
+import com.cuzzkale.Franchise_Savior.entities.league.divisionEntity;
 import jakarta.persistence.*;
 @Entity
-public class team_entity {
+public class teamEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -41,7 +41,7 @@ public class team_entity {
 
     @ManyToOne
     @JoinColumn(name = "division_id")
-    private division_entity division;
+    private divisionEntity division;
 
     public Long getId() {
         return id;
@@ -155,11 +155,11 @@ public class team_entity {
         this.teamChemistry = teamChemistry;
     }
 
-    public division_entity getDivision() {
+    public divisionEntity getDivision() {
         return division;
     }
 
-    public void setDivision(division_entity division) {
+    public void setDivision(divisionEntity division) {
         this.division = division;
     }
 }

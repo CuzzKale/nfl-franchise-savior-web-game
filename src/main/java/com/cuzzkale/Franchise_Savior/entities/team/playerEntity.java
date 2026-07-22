@@ -1,10 +1,9 @@
 package com.cuzzkale.Franchise_Savior.entities.team;
 
-import com.cuzzkale.Franchise_Savior.entities.history.player_history_entity;
 import jakarta.persistence.*;
 
 @Entity
-public class player_entity {
+public class playerEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -13,7 +12,7 @@ public class player_entity {
 
     @ManyToOne
     @JoinColumn(name = "team_id")
-    private team_entity team;
+    private teamEntity team;
 
 
     //  General Attributes
@@ -102,11 +101,11 @@ public class player_entity {
         this.id = id;
     }
 
-    public team_entity getTeam() {
+    public teamEntity getTeam() {
         return team;
     }
 
-    public void setTeam(team_entity team) {
+    public void setTeam(teamEntity team) {
         this.team = team;
     }
 

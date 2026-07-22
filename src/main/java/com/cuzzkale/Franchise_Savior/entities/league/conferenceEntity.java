@@ -3,7 +3,7 @@ package com.cuzzkale.Franchise_Savior.entities.league;
 import jakarta.persistence.*;
 
 @Entity
-public class conference_entity {
+public class conferenceEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -12,7 +12,7 @@ public class conference_entity {
 
     @ManyToOne
     @JoinColumn(name = "league_id")
-    private league_entity league;
+    private leagueEntity league;
 
     public Long getId() {
         return id;
@@ -30,11 +30,11 @@ public class conference_entity {
         this.name = name;
     }
 
-    public league_entity getLeague() {
+    public leagueEntity getLeague() {
         return league;
     }
 
-    public void setLeague(league_entity league) {
+    public void setLeague(leagueEntity league) {
         this.league = league;
     }
 }

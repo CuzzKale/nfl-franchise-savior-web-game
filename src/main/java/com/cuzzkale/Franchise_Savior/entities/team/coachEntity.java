@@ -1,10 +1,10 @@
 package com.cuzzkale.Franchise_Savior.entities.team;
 
-import com.cuzzkale.Franchise_Savior.entities.user.users_entity;
+import com.cuzzkale.Franchise_Savior.entities.user.usersEntity;
 import jakarta.persistence.*;
 
 @Entity
-public class coach_entity {
+public class coachEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -12,11 +12,11 @@ public class coach_entity {
 
     @OneToOne
     @JoinColumn(name = "team_id")
-    private team_entity team;
+    private teamEntity team;
 
     @ManyToOne
     @JoinColumn(name = "user_id")
-    private users_entity user;
+    private usersEntity user;
 
     private String name;
 
@@ -34,11 +34,11 @@ public class coach_entity {
 
     private int numOfVotes;
 
-    public users_entity getUser() {
+    public usersEntity getUser() {
         return user;
     }
 
-    public void setUser(users_entity user) {
+    public void setUser(usersEntity user) {
         this.user = user;
     }
 
@@ -58,11 +58,11 @@ public class coach_entity {
         this.id = id;
     }
 
-    public team_entity getTeam() {
+    public teamEntity getTeam() {
         return team;
     }
 
-    public void setTeam(team_entity team) {
+    public void setTeam(teamEntity team) {
         this.team = team;
     }
 
